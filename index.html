@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Sign-up</title>
+    <link rel="stylesheet" href="/sass/main.scss" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Title</title>
-  <link rel="stylesheet" href="/sass/main.scss">
-</head>
+  <body>
+    <main>
+      <section>
+        <div class="card">
+          <div class="even-columns">
+            <!-- col 1 -->
+            <div class="card__column-1">
+              <picture>
+                <source
+                  media="(min-width: 50em)"
+                  srcset="./assets/images/illustration-sign-up-desktop.svg"
+                />
+                <img
+                  src="./assets/images/illustration-sign-up-mobile.svg"
+                  alt="illustration sign-up"
+                />
+              </picture>
+            </div>
+            <!-- col 2 -->
+            <div class="card__column-2">
+              <div class="container">
+                <header class="card__heading">
+                  <h1>Stay updated!</h1>
+                </header>
 
-<body>
+                <p class="margin-block-6">Join 60,000+ product managers receiving monthly updates on:</p>
 
-  <main>
-    content goes here
-  </main>
+                <div class="flow-small">
+                  <div class="flex-group">
+                    <img class="card__checkmark" src="/assets/images/icon-list.svg" alt="checkmark">
+                    <p>Product discovery and building what matters</p>
+                  </div>
+                  <div class="flex-group">
+                    <img class="card__checkmark" src="/assets/images/icon-list.svg" alt="checkmark">
+                    <p>Measuring to ensure updates are a success</p>
+                  </div>
+                  <div class="flex-group" >
+                    <img class="card__checkmark" src="/assets/images/icon-list.svg" alt="checkmark">
+                    <p>And much more!</p>
+                  </div>
+                </div>
+                
+                <form action="/" method="GET" class="contact-form | flow-medium" id="form">
+                  
+                  <div class="form-group | flow-small">
+                    <div class="space-between">
+                      <label for="email">Email address</label>
+                      <small class="form-error" for="email" id="email-error">Valid email required</small>
+                    </div>
+                    <input id="email" type="email" placeholder="email@company.com" autocomplete="off" />
+                  </div>
 
+                  <button  class="button" data-type="primary">Subscribe to monthly newsletter</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <script src="/main.js"></script>
-</body>
-
+    <script src="./main.js"></script>
+  </body>
 </html>

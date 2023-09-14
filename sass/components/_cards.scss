@@ -2,8 +2,8 @@
 
 .card {
   display: grid;
+  max-width: 58rem;
   gap: $card-flow-spacing;
-  padding: $card-padding;
   background-color: $card-background-default;
   font-family: $card-font-family;
   color: $card-color-default;
@@ -13,5 +13,30 @@
 
   &__heading {
     @include heading($card-heading-font-size, $card-heading-color-default);
+  }
+
+  &__column-2{
+      padding-block: $card-section-padding;
+      max-width: 25rem;
+      align-self: center;
+  }
+
+  &__checkmark{
+    max-width: $card-checkmark-max-width;
+    align-self: $card-checkmark-alignment;
+  }
+
+  form{
+    margin-top: 2.5rem;
+  }
+
+  @include mq(medium){
+    &{
+      padding: $card-padding;
+    }
+
+    &__column-2{
+      order: -1;
+    }
   }
 }

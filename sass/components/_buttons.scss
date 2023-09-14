@@ -13,25 +13,15 @@
   padding: $button-padding;
   border: $button-border;
   border-radius: $button-border-radius;
-  transition: 275ms ease;
-
-  &[data-type="accent"] {
-    background-color: $button-accent-background;
-    color: $button-accent-color;
-
-    &:is(:hover, :focus) {
-      background-color: $button-accent-background-hover;
-      color: $button-accent-color-hover;
-    }
-  }
+  width: 100%;
 
   &[data-type="primary"] {
-    background-color: $button-primary-background;
+    background: $button-primary-background;
     color: $button-primary-color;
-
     &:is(:hover, :focus) {
-      background-color: $button-primary-background-hover;
+      background: $button-primary-background-hover;
       color: $button-primary-color-hover;
+      box-shadow: $box-shadow-1;
     }
   }
 }

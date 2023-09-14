@@ -7,6 +7,10 @@ body {
   color: $body-text-color;
   background-color: $body-background-color;
   line-height: $body-line-height;
+//  to center card
+  display: grid;
+  height: 100vh;
+  place-items: center;
 }
 
 a {

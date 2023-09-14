@@ -1,3 +1,15 @@
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 1em);
 }
+
+.flow-small > *:where(:not(:first-child)) {
+  margin-top: var(--flow-medium-spacer, .6em);
+}
+
+.flow-medium > *:where(:not(:first-child)) {
+  margin-top: var(--flow-medium-spacer, 1.5em);
+}
+
+.flow-large > *:where(:not(:first-child)) {
+  margin-top: var(--flow-large-spacer, 2em);
+}
