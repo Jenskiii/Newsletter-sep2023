@@ -39,4 +39,29 @@
       order: -1;
     }
   }
+
+  //  page after submit
+ &.succes{  
+  display: grid;
+  place-items: center;
+  padding: 3rem 4rem 4rem 4rem;
+  @include mq(small, max){
+    height: 100vh;
+    padding: 0 1.5rem;
+   
+  }
+  p{
+    max-width: 38ch;
+  }
+
+  img{
+    max-width: 4rem;
+    margin-bottom: 2.5rem;
+  }
+  header{
+    line-height: 100%;
+  }
+
+  max-width: 31.5rem;
+ }
 }

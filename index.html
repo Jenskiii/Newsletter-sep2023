@@ -10,11 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Newsletter Sign-up</title>
     <link rel="stylesheet" href="/sass/main.scss" />
+    <script type="module" src="main.js" type="text/javascript" defer></script>
   </head>
 
   <body>
     <main>
-      <section>
+      <section class="main-card">
         <div class="card">
           <div class="even-columns">
             <!-- col 1 -->
@@ -37,42 +38,93 @@
                   <h1>Stay updated!</h1>
                 </header>
 
-                <p class="margin-block-6">Join 60,000+ product managers receiving monthly updates on:</p>
+                <p class="margin-block-6">
+                  Join 60,000+ product managers receiving monthly updates on:
+                </p>
 
                 <div class="flow-small">
                   <div class="flex-group">
-                    <img class="card__checkmark" src="/assets/images/icon-list.svg" alt="checkmark">
+                    <img
+                      class="card__checkmark"
+                      src="/assets/images/icon-list.svg"
+                      alt="checkmark"
+                    />
                     <p>Product discovery and building what matters</p>
                   </div>
                   <div class="flex-group">
-                    <img class="card__checkmark" src="/assets/images/icon-list.svg" alt="checkmark">
+                    <img
+                      class="card__checkmark"
+                      src="/assets/images/icon-list.svg"
+                      alt="checkmark"
+                    />
                     <p>Measuring to ensure updates are a success</p>
                   </div>
-                  <div class="flex-group" >
-                    <img class="card__checkmark" src="/assets/images/icon-list.svg" alt="checkmark">
+                  <div class="flex-group">
+                    <img
+                      class="card__checkmark"
+                      src="/assets/images/icon-list.svg"
+                      alt="checkmark"
+                    />
                     <p>And much more!</p>
                   </div>
                 </div>
-                
-                <form action="/" method="GET" class="contact-form | flow-medium" id="form">
-                  
+
+                <form
+                  action="/"
+                  method="GET"
+                  class="contact-form | flow-medium"
+                  id="form"
+                >
                   <div class="form-group | flow-small">
                     <div class="space-between">
                       <label for="email">Email address</label>
-                      <small class="form-error" for="email" id="email-error">Valid email required</small>
+                      <small class="form-error" for="email" id="email-error"
+                        >Valid email required</small
+                      >
                     </div>
-                    <input id="email" type="email" placeholder="email@company.com" autocomplete="off" />
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="email@company.com"
+                      autocomplete="off"
+                    />
                   </div>
 
-                  <button  class="button" data-type="primary">Subscribe to monthly newsletter</button>
+                  <button type="submit" class="button" data-type="primary">
+                    Subscribe to monthly newsletter
+                  </button>
                 </form>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section class="secondary-card | hidden">
+        <div class="card succes">
+          <div>
+            <img
+              class="succes_icon"
+              src="/assets/images/icon-success.svg"
+              alt=""
+            />
+            <header class="card__heading">
+              <h1>
+                Thanks for<br />
+                subscribing!
+              </h1>
+            </header>
+            <p class="margin-block-6">
+              A confirmation email has been sent to
+              <span class="secondary-card__email | fw-bold"></span>. Please open it and click
+              the button inside to confirm your subscription
+            </p>
+            <button class="dismiss button" data-type="primary">Dismiss message</button>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <script src="./main.js"></script>
+    
   </body>
 </html>
