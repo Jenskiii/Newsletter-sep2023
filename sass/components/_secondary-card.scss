@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+.card {
+  //  page after submit
+  &.succes {
+    display: grid;
+    place-items: center;
+    max-width: $secondary-card-max-width;
+    padding: $secondary-card-padding;
+
+    header {
+      line-height: $secondary-card-header-line-height;
+    }
+
+    p {
+      max-width: $secondary-card-paragraph-width;
+    }
+
+    img {
+      max-width: $secondary-card-icon-width;
+      margin-bottom: $secondary-card-icon-margin-bottom;
+    }
+
+    @include mq(small, max) {
+      height: $secondary-card-height-small-screen;
+      padding: $secondary-card-padding-small-screen;
+    }
+  }
+}

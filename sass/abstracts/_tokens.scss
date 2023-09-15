@@ -124,6 +124,16 @@ $card-section-padding: $size-6;
 $card-checkmark-alignment: flex-start;
 $card-checkmark-max-width: 1.3rem;
 
+// secondary card
+$secondary-card-max-width: 31.5rem;
+$secondary-card-padding: 3rem 4rem 4rem 4rem;
+$secondary-card-padding-small-screen: 0 1.5rem;
+$secondary-card-height-small-screen: 100vh;
+$secondary-card-header-line-height: 100%;
+$secondary-card-paragraph-width: 38ch;
+$secondary-card-icon-width: 4rem;
+$secondary-card-icon-margin-bottom: 2.5rem;
+
 // forms
 $form-label-color: $body-text-color;
 $form-label-font-family: $body-font-family;
